@@ -1,0 +1,35 @@
+// flex center mixin
+@mixin flex-center($x-axis, $y-axis) {
+  display: flex;
+  flex-direction: column;
+  justify-content: $x-axis;
+  align-items: $y-axis;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  min-height: 100vh;
+  width: 100%;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  @include flex-center(flex-start, center);
+  h2 {
+    border-bottom: 2px solid #cccc;
+    padding: 10px;
+    margin-bottom: 15px;
+    font-weight: 800;
+  }
+  p {
+    font-size: 1.3em;
+    font-weight: 700px;
+  }
+}
