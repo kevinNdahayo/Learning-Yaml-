@@ -1,0 +1,4 @@
+myapp: 
+     service: my-yaml-file
+     test: script-1
+     test2: script-2
