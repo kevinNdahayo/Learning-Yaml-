@@ -1,18 +1,8 @@
-# this is a comment in yaml 
-
-myapp: 
-     service: my-yaml-file
-     test: script-1
-     test2: script-2
-
-
-#Arrays / Lists in yaml       
-
-namesArray: 
-  - key1: value 1
-      keyrandom: valuerandom
-  - key2: value2
-      keyrandom: valuerandom2
-
-# Yaml validation
-
+name: My first Github action
+on: [push]
+jobs:
+  print-hello-world:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Helloworld !!!!!"
+      - run: echo "this is the second step "
